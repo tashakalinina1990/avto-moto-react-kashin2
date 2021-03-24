@@ -1,0 +1,29 @@
+.card-description {
+  @include centered-layout;
+  padding-bottom: 140px;
+}
+
+.card-description__wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 90px;
+  padding-top: 73px;
+}
+
+.card-description__gallery {
+  max-width: 600px;
+  margin-right: 4.6%;
+  padding-top: 16px;
+}
+
+.card-description__car-info {
+  flex-shrink: 0;
+  max-width: 519px;
+}
+
+@media (min-width: $desktop-centered-threshold) {
+  .card-description {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

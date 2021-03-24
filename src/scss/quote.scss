@@ -1,0 +1,130 @@
+.quote {
+  margin: 0;
+}
+
+.quote__author {
+  display: block;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  padding-right: 160px;
+
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.quote__descriptions {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.quote__descriptions-row-wrapper {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 19px;
+
+  &--no-icon {
+    padding-left: 0;
+  }
+
+  &--pros::before,
+  &--cons::before {
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: $red;
+  }
+
+  &--pros::before {
+    content: "+";
+  }
+
+  &--cons::before {
+    content: "–";
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.quote__subtitle {
+  margin-bottom: 4px;
+
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: $black;
+}
+
+.quote__value {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $black;
+}
+
+.quote__rating {
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.quote__rating-stars {
+  display: flex;
+  @include list-reset;
+  margin-right: 18px;
+}
+
+.quote__rating-star {
+  margin-right: 5px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.quote__star-icon {
+  width: 17px;
+  height: 17px;
+
+  &--red {
+    fill: $red;
+  }
+
+  &--gray {
+    fill: $star-dark-gray;
+    fill-opacity: 0.7;
+  }
+}
+
+.quote__rating-text {
+  margin: 0;
+  padding: 0;
+  color: $red;
+}
+
+.quote__actions {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.quote__time {
+  margin-right: 23px;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: $black;
+  opacity: 0.4;
+}
+
+.quote__reply {
+  color: $red;
+
+  @include basic-hover;
+  @include basic-active;
+}

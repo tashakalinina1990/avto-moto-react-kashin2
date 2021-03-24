@@ -1,0 +1,43 @@
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider__photos {
+  margin-right: 31px;
+}
+
+.slider__button {
+  width: 52px;
+  height: 52px;
+  padding-top: 2px;
+
+  background-color: $white;
+  border: 1px solid $gray;
+  border-radius: 50%;
+
+  stroke: $accent-black;
+
+  cursor: pointer;
+
+  &--disabled,
+  &:disabled {
+    stroke: $gray;
+    cursor: initial;
+  }
+
+  &--prev {
+    order: -1;
+    margin-right: 31px;
+  }
+}
+
+.slider__icon-arrow {
+  width: 20px;
+  height: 13px;
+}
+
+.slider__button--prev .slider__icon-arrow {
+  transform: rotate(180deg);
+}
+
